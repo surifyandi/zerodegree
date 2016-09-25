@@ -18,13 +18,13 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" media="screen"/>
 
     <!-- font open sans -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- main css -->
-    <link rel="stylesheet" href="css/style.css" media="screen"/>
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- custom bootstrap -->
-    <link rel="stylesheet" href="css/custom-bootstrap.css" media="screen"/>
+    <link rel="stylesheet" href="css/responsive.css" />
 
   </head>
   <body>
@@ -33,6 +33,8 @@
       <li></li>
       <li></li>
     </ul>
+
+    <!-- main navigation -->
     <nav class="navigation">
       <ul>
         <li><a href="#"><i class="fa fa-home"></i></a></li>
@@ -45,73 +47,180 @@
         </li>
       </ul>
     </nav>
+    <!-- end of main navigation -->
+
     <div class="fullpage">
+
+      <!-- video intro -->
       <section class="section introduce">
-        <div class="container">
-          <div class="col-md-12">
-            <div class="caption">
-              <img src="images/logo-mockup.png" alt="" class="logo"/>
-              <h2 class="title">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit</h2>
-            </div>
-          </div>
+        <div class="background-video">
+          <iframe src="https://www.youtube.com/embed/6lV5vSOz6co?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0"></iframe>
         </div>
       </section>
+      <!-- end of video intro -->
+
+      <!-- latest article -->
       <section class="section latest-articles">
-        <div class="main-title">
-          <div class="line"></div>
-        </div>
-        <div class="body-articles">
-          <article class="active" data-id="article-1">
-            <div class="background" style="background-image: url(images/small-thumb/articles/bedugul.jpg);"></div>
-            <h4 class="title">
-              <span>Keindahan Objek Wisata Bedugul</span>
-              <span>readmore <i class="fa fa-long-arrow-right"></i></span>
-            </h4>
-          </article>
-          <article>
-            <div class="background" style="background-image: url(images/small-thumb/articles/borobudur.jpg);"></div>
-            <h4 class="title">
-              <span>Keindahan Objek Wisata Bedugul</span>
-              <span>readmore <i class="fa fa-long-arrow-right"></i></span>
-            </h4>
-          </article>
-          <article>
-            <div class="background" style="background-image: url(images/small-thumb/articles/bromo.jpg);"></div>
-            <h4 class="title">
-              <span>Keindahan Objek Wisata Bedugul</span>
-              <span>readmore <i class="fa fa-long-arrow-right"></i></span>
-            </h4>
-          </article>
-          <article>
-            <div class="background" style="background-image: url(images/small-thumb/articles/sawah.jpg);"></div>
-            <h4 class="title">
-              <span>Keindahan Objek Wisata Bedugul</span>
-              <span>readmore <i class="fa fa-long-arrow-right"></i></span>
-            </h4>
-          </article>
-        </div>
-        <div class="data-latest-articles" style="background-image: url(images/overlay/sawah.jpg)">
-          <div class="container">
-            <div class="content">
-              <h2 class="title">Lorem Ipsum Dolor Amet Consectetur</h2>
-              <p>
-                Lorem ipsum dolor sit amet, ei nostrum electram vel, vim at integre consequat pertinacia. Pro ei tale paulo convenire, iusto nihil sed id. Lorem expetendis sed et. Pri ex mutat eirmod atomorum. Usu ex modo autem noluisse. Mazim aliquam signiferumque usu te, vidisse volumus disputando cum ut. Similique forensibus no sit. Eum electram postulant ut, vidit congue ad quo, id quidam utroque cum. Dolorem lobortis quo ad, pro sint munere detracto at. In etiam mentitum duo, esse congue imperdiet ea pri. Duo torquatos quaerendum eu. Ut exerci postulant mnesarchum vel. Elitr eruditi blandit ut has. Mel id homero persius imperdiet, alii omnes repudiandae ad pro, per lorem vitae cotidieque ea. Cum antiopam inimicus in, oporteat electram sea ut. Mollis salutandi et per, vel et alienum corrumpit. Nec cu consul possit ceteros, mel ex dicit singulis, ex quot integre vim. Ad eum minim meliore conceptam, adhuc libris mediocritatem sed ex. Ex eos etiam aliquam. Mea sonet delectus comprehensam ex, et quas cetero quo, nec nemore facilisis cu. Sale quodsi pericula ut per, vel erroribus molestiae eu.
-              </p>
-              <p>
-                Eu pri duis libris deseruisse, at qui brute solet suscipit. At possit perpetua mel, vel ne primis detraxit. Ius nobis vituperatoribus ea, ea per erat sanctus ceteros. Habeo novum ocurreret no qui, posse tollit sit ne, eam id velit populo persecuti. Indoctum argumentum reprimique ea vis, regione virtute minimum mel eu. In eos ipsum nonumes.Lorem ipsum dolor sit amet, ei nostrum electram vel, vim at integre consequat pertinacia. Pro ei tale paulo convenire, iusto nihil sed id. Lorem expetendis sed et. Pri ex mutat eirmod atomorum. Usu ex modo autem noluisse. Mazim aliquam signiferumque usu te, vidisse volumus disputando cum ut. Similique forensibus no sit. Eum electram postulant ut, vidit congue ad quo, id quidam utroque cum. Dolorem lobortis quo ad, pro sint munere detracto at. In etiam mentitum duo, esse congue imperdiet ea pri. Duo torquatos quaerendum eu. Ut exerci postulant mnesarchum vel. Elitr eruditi blandit ut has. Mel id homero persius imperdiet, alii omnes repudiandae ad pro, per lorem vitae cotidieque ea. Cum antiopam inimicus in, oporteat electram sea ut.
-              </p>
+        <div class="dot-mask"></div>
+        <div class="container">
+          <article class="big-article">
+            <div class="background" style="background-image: url(images/small-thumb/articles/img-article-1.jpg)"></div>
+            <div class="title">
+              <h4>Keindahan Arsitektur Rumah Radank Pontianak</h4>
             </div>
-            <div class="menu">
-              <div class="close-button button button-rounded button-transparent">
-                <i class="fa fa-times"></i>
-              </div>
-              <a class="button button-rounded button-transparent">cek destinasi ini</a>
-              <a class="button button-rounded button-transparent">gallery terkait</a>
+          </article>
+          <article class="small-article">
+            <div class="background" style="background-image: url(images/small-thumb/articles/img-article-2.jpg)"></div>
+            <div class="title">
+              <h4>Keindahan Candi Borobudur Beserta Patungnya</h4>
             </div>
+          </article>
+          <article class="small-article">
+            <div class="background" style="background-image: url(images/small-thumb/articles/img-article-3.jpg)"></div>
+            <div class="title">
+              <h4>No admodum detracto constituam per, integre</h4>
+            </div>
+          </article>
+          <article class="small-article">
+            <div class="background" style="background-image: url(images/small-thumb/articles/img-article-4.jpg)"></div>
+            <div class="title">
+              <h4>partiendo ad pri, no eam facer nemore signiferumque</h4>
+            </div>
+          </article>
+          <article class="small-article">
+            <figure>
+              <div class="background" style="background-image: url(images/small-thumb/articles/img-article-5.jpg)"></div>
+            <div class="title">
+              <h4>Te velit mediocrem tincidunt mel, eum ei nihilk</h4>
+            </div>
+            </figure>
+          </article>
+        </div>
+      </section>
+      <!-- end of latest article -->
+
+      <!-- popular destination -->
+      <section class="section popular-destination">
+        <div class="row-destination">
+          <article class="destination">
+            <figure>
+              <img src="images/popular-destination/popular-dest-1.jpg" alt="" />
+              <figcaption>
+                <h2>Air Terjun Kedung Kayang</h2>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="destination">
+            <figure>
+              <img src="images/popular-destination/popular-dest-2.jpg" alt="" />
+              <figcaption>
+                <h2>Gunung Bromo</h2>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="destination">
+            <figure>
+              <img src="images/popular-destination/popular-dest-3.jpg" alt="" />
+              <figcaption>
+                <h2>Rumah Radank</h2>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+      <!-- end of popular destination -->
+
+      <!-- latest gallery -->
+      <section class="section latest-gallery">
+        <div class="dot-pattern"></div>
+        <div class="slider-gallery">
+          <div class="row-gallery">
+            <a href="#">
+              <figure>
+                <img src="images/small-thumb/gallery-slider/thumb-1.jpg" alt="" />
+              </figure>
+            </a>
+            <a href="#">
+              <figure>
+                <img src="images/small-thumb/gallery-slider/thumb-2.jpg" alt="" />
+              </figure>
+            </a>
+            <a href="#">
+              <figure>
+                <img src="images/small-thumb/gallery-slider/thumb-3.jpg" alt="" />
+              </figure>
+            </a>
+            <a href="#">
+              <figure>
+                <img src="images/small-thumb/gallery-slider/thumb-4.jpg" alt="" />
+              </figure>
+            </a>
+            <a href="#">
+              <figure>
+                <img src="images/small-thumb/gallery-slider/thumb-5.jpg" alt="" />
+              </figure>
+            </a>
+          </div>
+          <div class="control">
+            <i class="fa fa-angle-left left"></i>
+            <i class="fa fa-angle-right right"></i>
           </div>
         </div>
       </section>
+      <!-- end of latest gallery -->
+
     </div>
+
+    <!-- popup -->
+    <section class="detail-popup">
+      <article class="body">
+        <div class="property">
+          <figure>
+            <img src="images/small-thumb/articles/img-article-1.jpg" alt="" />
+          </figure>
+        </div>
+        <div class="text">
+          <h3>Lorem Ipsum Dolor Sit Amet Consec tetur Adipisicing Elit</h3>
+          <p>
+            Lorem ipsum dolor sit amet, eripuit disputando mei no, dico elit ex eos. Ad dicant indoctum usu, id ius soluta causae voluptatum. Tacimates invenire complectitur ad pri, tritani quaerendum cum ei. Tota delectus theophrastus pro ad. Ea elit exerci qui, consul rationibus repudiandae sea ex. Cu dicam laoreet sea, quo ne detracto imperdiet.
+          </p>
+
+          <p>
+            Mea quas graecis ne. Te natum offendit singulis qui, usu molestiae liberavisse in. Cu natum philosophia disputationi mel. Est ex error dissentias. Nisl invidunt pericula ut eos, duo an wisi legere, at quot iusto voluptaria his. No detracto adipisci principes sea, eam cu prima copiosae convenire.
+          </p>
+
+          <figure>
+            <img src="images/small-thumb/articles/img-article-2.jpg" alt="" />
+          </figure>
+
+          <p>
+            Tollit principes voluptatum vel ne, sit eligendi vivendum facilisi ad, an pro graece option insolens. Id eam ipsum libris iudicabit, qui sale nemore at, ne duo mollis discere interesset. Has congue tacimates perpetua cu. Impetus volumus inimicus id est, ius ne mundi definiebas.
+          </p>
+
+          <p>
+            Eu aliquip detraxit consulatu mel, dicat tritani cu ius. Facilisi complectitur ea usu, ut verterem hendrerit duo, aperiam laoreet adipisci ius id. Ex sit dicat inani tritani. Tale suscipit eu quo. Ei sea quando minimum, usu magna deserunt aliquando ei. Sumo velit fabulas his cu. Sea option debitis invenire in, commune salutatus efficiantur eos ut, regione sententiae eu pro. Corpora liberavisse at sea, saepe omittam delectus per ad. Libris delicatissimi in vix. In mel suavitate imperdiet, ne has erant dolore audire.
+          </p>
+
+          <figure>
+            <img src="images/small-thumb/articles/img-article-3.jpg" alt="" />
+          </figure>
+
+          <p>
+            Lorem ipsum dolor sit amet, eripuit disputando mei no, dico elit ex eos. Ad dicant indoctum usu, id ius soluta causae voluptatum. Tacimates invenire complectitur ad pri, tritani quaerendum cum ei. Tota delectus theophrastus pro ad. Ea elit exerci qui, consul rationibus repudiandae sea ex. Cu dicam laoreet sea, quo ne detracto imperdiet.
+          </p>
+        </div>
+        <div class="meta-button">
+          <ul>
+            <li class="love-button"><i class="glyphicon glyphicon-heart"></i></li>
+            <li class="dest-button"><i class="glyphicon glyphicon-map-marker"></i></li>
+            <li class="gallery-button"><i class="glyphicon glyphicon-picture"></i></li>
+            <li class="travel-button"><i class="fa fa-plane"></i></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <!-- end of popup -->
+
   </body>
 
   <!-- jquery -->
@@ -134,7 +243,9 @@
     $(document).ready(function() {
       $('.fullpage').fullpage();
 
-      $('.data-latest-articles .container .content').mCustomScrollbar();
+      $('.detail-popup .text').mCustomScrollbar({
+        theme: 'dark'
+      });
     });
   </script>
 

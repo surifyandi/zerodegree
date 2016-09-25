@@ -1,0 +1,69 @@
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media (max-width: 767px){
+
+	/*latest article*/
+
+	section.latest-articles .container{
+		width: 100%;
+		height: 100%;
+	}
+
+	section.latest-articles article.big-article{
+		width: 100%;
+		height: 50%;
+	}
+	section.latest-articles article.small-article{
+		width: 50%;
+		height: 25%;
+		margin-right: -4px;
+		margin-bottom: -5px;
+	}
+
+	section.latest-articles article.big-article:before,
+	section.latest-articles article.big-article:after,
+	section.latest-articles article.small-article:before,
+	section.latest-articles article.small-article:after{
+		display: none;
+	}
+
+	/*end of latest article*/
+
+	/*detail popup*/
+
+	.detail-popup .body{
+		display: block;
+		width: 95%;
+		margin: auto;
+		margin-top: 10%;
+	}
+
+	.detail-popup .body .property{
+		display: block;
+		width: 100%;
+		height: 30%;
+		overflow: hidden;
+	}
+
+	.detail-popup .body .property figure img{
+		width: 100%;
+		height: auto;
+	}
+
+	.detail-popup .body .text{
+		width: 100%;
+		height: 70%;
+		display: block;
+	}
+
+	.detail-popup .meta-button{
+		position: absolute;
+		left: 30px;
+		bottom: 5px;
+		display: block;
+	}
+
+	/*end of detail popup*/
+}
