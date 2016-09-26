@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" media="screen"/>
 
     <!-- font open sans -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
@@ -88,12 +88,10 @@
             </div>
           </article>
           <article class="small-article">
-            <figure>
-              <div class="background" style="background-image: url(images/small-thumb/articles/img-article-5.jpg)"></div>
+            <div class="background" style="background-image: url(images/small-thumb/articles/img-article-5.jpg)"></div>
             <div class="title">
               <h4>Te velit mediocrem tincidunt mel, eum ei nihilk</h4>
             </div>
-            </figure>
           </article>
         </div>
       </section>
@@ -103,28 +101,44 @@
       <section class="section popular-destination">
         <div class="row-destination">
           <article class="destination">
-            <figure>
-              <img src="images/popular-destination/popular-dest-1.jpg" alt="" />
-              <figcaption>
-                <h2>Air Terjun Kedung Kayang</h2>
-              </figcaption>
-            </figure>
+            <div class="background" style="background-image: url(images/popular-destination/popular-dest-1.jpg)"></div>
+            <div class="caption">
+              <h2>Air Terjun Kedung Kayang</h2>
+              <div class="body-sinopsis">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore</p>
+              </div>
+            </div>
           </article>
           <article class="destination">
-            <figure>
-              <img src="images/popular-destination/popular-dest-2.jpg" alt="" />
-              <figcaption>
-                <h2>Gunung Bromo</h2>
-              </figcaption>
-            </figure>
+            <div class="background" style="background-image: url(images/popular-destination/popular-dest-2.jpg)"></div>
+            <div class="caption">
+              <h2>Gunung Bromo</h2>
+              <div class="body-sinopsis">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore</p>
+              </div>
+            </div>
           </article>
           <article class="destination">
-            <figure>
-              <img src="images/popular-destination/popular-dest-3.jpg" alt="" />
-              <figcaption>
-                <h2>Rumah Radank</h2>
-              </figcaption>
-            </figure>
+            <div class="background" style="background-image: url(images/popular-destination/popular-dest-3.jpg)"></div>
+            <div class="caption">
+              <h2>Rumah Radakng</h2>
+              <div class="body-sinopsis">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore</p>
+              </div>
+            </div>
+          </article>
+          <article class="destination">
+            <div class="background" style="background-image: url(images/popular-destination/popular-dest-1.jpg)"></div>
+            <div class="caption">
+              <h2>Air Terjun Kedung Kayang</h2>
+              <div class="body-sinopsis">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore</p>
+              </div>
+            </div>
           </article>
         </div>
       </section>

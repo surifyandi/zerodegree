@@ -6,6 +6,7 @@ $(document).ready(function(){
     $(".navigation").toggleClass("active");
   });
 
+
   //hover latest articles
   $(".latest-articles .article").mouseenter(function(){
     $(this).addClass("hover");
@@ -15,6 +16,7 @@ $(document).ready(function(){
     $(this).removeClass("hover");
   });
 
+
   //hover latest articles
   $(".latest-articles article").mouseenter(function(){
     $(this).addClass("active");
@@ -23,6 +25,7 @@ $(document).ready(function(){
   $(".latest-articles article").mouseleave(function(){
     $(this).removeClass("active");
   });
+
 
   //detail popup
   $(".latest-articles article").click(function(){
@@ -35,6 +38,7 @@ $(document).ready(function(){
   $(".popular-destination .destination").click(function() {
     $(".detail-popup").addClass("active");
   });
+
 
   // hover popular destination
   $(".popular-destination .destination").mouseenter(function() {
