@@ -17,8 +17,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" media="screen"/>
 
-    <!-- font open sans -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- font montserrat and droid serif-->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700|Montserrat:400,700" rel="stylesheet">
 
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />

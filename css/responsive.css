@@ -2,6 +2,29 @@
 
 }
 
+@media (max-width: 991px){
+	section.popular-destination .row-destination article.destination{
+  		width: 50%;
+  		height: 50%;
+  		margin-bottom: -6px;
+	}
+
+	section.latest-articles article.big-article .title{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	section.popular-destination .row-destination article.destination .caption h2,
+	section.latest-articles article.big-article .title h4{
+		font-size: 18px;
+  		line-height: 24px;
+	}
+
+	section.latest-articles article.small-article .title h4{
+		font-size: 14px;
+		line-height: 20px;
+	}
+
 @media (max-width: 767px){
 
 	/*latest article*/
