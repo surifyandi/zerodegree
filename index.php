@@ -12,10 +12,14 @@
     <!-- fullpage -->
     <link rel="stylesheet" href="vendor/fullpage/jquery.fullpage.css" media="screen"/>
 
-    <link rel="stylesheet" href="vendor/custom-scrollbar/jquery.mCustomScrollbar.min.css" media="screen">
+    <!-- custom scrollbar -->
+    <link rel="stylesheet" href="vendor/custom-scrollbar/jquery.mCustomScrollbar.min.css" media="screen" />
 
     <!-- font awesome -->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" media="screen"/>
+
+    <!-- video background -->
+    <link rel="stylesheet" href="vendor/background-video/style.css" media="screen" />
 
     <!-- font montserrat and droid serif-->
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700|Montserrat:400,700" rel="stylesheet">
@@ -53,8 +57,9 @@
 
       <!-- video intro -->
       <section class="section introduce">
-        <div class="background-video">
-          <iframe src="https://www.youtube.com/embed/6lV5vSOz6co?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0"></iframe>
+        <div id="video-background"></div>
+        <div class="meta-navigation">
+          <i class="fa fa-long-arrow-down"></i>
         </div>
       </section>
       <!-- end of video intro -->
@@ -65,34 +70,42 @@
         <div class="container">
           <article class="big-article">
             <div class="background" style="background-image: url(images/small-thumb/articles/img-article-1.jpg)"></div>
+            <div class="meta">baru</div>
             <div class="title">
               <h4>Keindahan Arsitektur Rumah Radank Pontianak</h4>
             </div>
           </article>
           <article class="small-article">
             <div class="background" style="background-image: url(images/small-thumb/articles/img-article-2.jpg)"></div>
+            <div class="meta">populer</div>
             <div class="title">
               <h4>Keindahan Candi Borobudur Beserta Patungnya</h4>
             </div>
           </article>
           <article class="small-article">
             <div class="background" style="background-image: url(images/small-thumb/articles/img-article-3.jpg)"></div>
+            <div class="meta">populer</div>
             <div class="title">
-              <h4>No admodum detracto constituam per, integre</h4>
+              <h4>Gunung Bromo di Waktu Pagi</h4>
             </div>
           </article>
           <article class="small-article">
             <div class="background" style="background-image: url(images/small-thumb/articles/img-article-4.jpg)"></div>
+            <div class="meta">populer</div>
             <div class="title">
-              <h4>partiendo ad pri, no eam facer nemore signiferumque</h4>
+              <h4>Wisata Air Terjun Terekstrim di Indonesia</h4>
             </div>
           </article>
           <article class="small-article">
             <div class="background" style="background-image: url(images/small-thumb/articles/img-article-5.jpg)"></div>
+            <div class="meta">populer</div>
             <div class="title">
-              <h4>Te velit mediocrem tincidunt mel, eum ei nihilk</h4>
+              <h4>Indonesia Dengan Segala Keindahannya</h4>
             </div>
           </article>
+        </div>
+        <div class="meta-navigation">
+          <i class="fa fa-long-arrow-down"></i>
         </div>
       </section>
       <!-- end of latest article -->
@@ -141,6 +154,9 @@
             </div>
           </article>
         </div>
+        <div class="meta-navigation">
+          <i class="fa fa-long-arrow-down"></i>
+        </div>
       </section>
       <!-- end of popular destination -->
 
@@ -149,30 +165,45 @@
         <div class="dot-pattern"></div>
         <div class="slider-gallery">
           <div class="row-gallery">
-            <a href="#">
-              <figure>
+            <a href="#" data-slide="1" class="data-slide-1">
+              <figure class="image">
                 <img src="images/small-thumb/gallery-slider/thumb-1.jpg" alt="" />
               </figure>
+              <div class="caption active">
+                <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
+              </div>
             </a>
-            <a href="#">
-              <figure>
+            <a href="#" data-slide="2" class="data-slide-2">
+              <figure class="video">
                 <img src="images/small-thumb/gallery-slider/thumb-2.jpg" alt="" />
               </figure>
+              <div class="caption">
+                <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
+              </div>
             </a>
-            <a href="#">
-              <figure>
+            <a href="#" data-slide="3" class="data-slide-3">
+              <figure class="image">
                 <img src="images/small-thumb/gallery-slider/thumb-3.jpg" alt="" />
               </figure>
+              <div class="caption">
+                <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
+              </div>
             </a>
-            <a href="#">
-              <figure>
+            <a href="#" data-slide="4" class="data-slide-4">
+              <figure class="image">
                 <img src="images/small-thumb/gallery-slider/thumb-4.jpg" alt="" />
               </figure>
+              <div class="caption">
+                <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
+              </div>
             </a>
-            <a href="#">
-              <figure>
+            <a href="#" data-slide="5" class="data-slide-5">
+              <figure class="image">
                 <img src="images/small-thumb/gallery-slider/thumb-5.jpg" alt="" />
               </figure>
+              <div class="caption">
+                <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
+              </div>
             </a>
           </div>
           <div class="control">
@@ -231,6 +262,10 @@
             <li class="travel-button"><i class="fa fa-plane"></i></li>
           </ul>
         </div>
+        <ul class="close-button">
+          <li></li>
+          <li></li>
+        </ul>
       </article>
     </section>
     <!-- end of popup -->
@@ -246,9 +281,11 @@
   <!-- fullpage js -->
   <script src="vendor/fullpage/jquery.fullpage.min.js"></script>
 
-  <script src="vendor/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js">
+  <!-- custom scrollbar -->
+  <script src="vendor/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
-  </script>
+  <!-- video background -->
+  <script src="vendor/background-video/jquery.youtubebackground.js"></script>
 
   <!-- main js -->
   <script src="js/script.js"></script>
@@ -259,6 +296,11 @@
 
       $('.detail-popup .text').mCustomScrollbar({
         theme: 'dark'
+      });
+
+      $('#video-background').YTPlayer({
+        fitToBackground: true,
+        videoId: 'x1DRnv4yYU0'
       });
     });
   </script>
