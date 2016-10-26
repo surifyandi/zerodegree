@@ -326,7 +326,7 @@ section.latest-articles article.big-article .background{
   transition: .3s ease-in-out;
 }
 
-section.latest-articles article.big-article.active .background{
+section.latest-articles article.big-article:hover .background{
   opacity: .3;
   -webkit-transform: scale(1.08);
   -moz-transform: scale(1.08);
@@ -365,6 +365,11 @@ section.latest-articles article.big-article .title h4{
   transition: .5s ease;
 }
 
+section.latest-articles article.big-article:hover .title h4{
+  color: #ffce00;
+  padding-bottom: 10px;
+}
+
 section.latest-articles article.big-article .title h4:before{
   content: " ";
   width: 0;
@@ -379,12 +384,7 @@ section.latest-articles article.big-article .title h4:before{
   transition: .5s ease;
 }
 
-section.latest-articles article.big-article.active .title h4{
-  color: #ffce00;
-  padding-bottom: 10px;
-}
-
-section.latest-articles article.big-article.active .title h4:before{
+section.latest-articles article.big-article:hover .title h4:before{
   width: 100%;
 }
 
@@ -394,13 +394,6 @@ section.latest-articles article.small-article{
   overflow: hidden;
   position: relative;
   background: #000;
-}
-
-section.latest-articles article.small-article.active:before,
-section.latest-articles article.small-article.active:after{
-  width: 88%;
-  height: 88%;
-  border-color: #fff;
 }
 
 section.latest-articles article.small-article:nth-child(2),

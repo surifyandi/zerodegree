@@ -6,17 +6,6 @@ $(document).ready(function(){
     $(".navigation").toggleClass("active");
   });
 
-
-  //hover latest articles
-  $(".latest-articles .article").mouseenter(function(){
-    $(this).addClass("hover");
-  });
-
-  $(".latest-articles .article").mouseleave(function(){
-    $(this).removeClass("hover");
-  });
-
-
   //hover latest articles
   $(".latest-articles article").mouseenter(function(){
     $(this).addClass("active");
