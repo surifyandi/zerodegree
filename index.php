@@ -27,8 +27,11 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- custom bootstrap -->
+    <!-- responsive -->
     <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- component -->
+    <link rel="stylesheet" href="css/component.css" />
 
   </head>
   <body>
@@ -165,7 +168,7 @@
         <div class="dot-pattern"></div>
         <div class="slider-gallery">
           <div class="row-gallery">
-            <a href="#" data-slide="1" class="data-slide-1">
+            <a href="images/small-thumb/gallery-slider/thumb-1.jpg" data-slide="1" class="data-slide-1">
               <figure class="image">
                 <img src="images/small-thumb/gallery-slider/thumb-1.jpg" alt="" />
               </figure>
@@ -206,9 +209,22 @@
               </div>
             </a>
           </div>
+
           <div class="control">
             <i class="fa fa-angle-left left"></i>
             <i class="fa fa-angle-right right"></i>
+          </div>
+
+          <div class="popup-gallery">
+            <figure>
+              <img src="images/small-thumb/gallery-slider/thumb-1.jpg" />
+              <figcaption>Lorem ipsum dolor sit amet, ne duis detraxit</figcaption>
+
+              <ul class="close-button">
+                <li></li>
+                <li></li>
+              </ul>
+            </figure>
           </div>
         </div>
       </section>

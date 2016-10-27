@@ -6,44 +6,26 @@ $(document).ready(function(){
     $(".navigation").toggleClass("active");
   });
 
-  //hover latest articles
-  $(".latest-articles article").mouseenter(function(){
-    $(this).addClass("active");
-  });
-
-  $(".latest-articles article").mouseleave(function(){
-    $(this).removeClass("active");
-  });
-
-
   //detail popup
   $(".latest-articles article").click(function(){
     $(".detail-popup").addClass("active");
-     $(".button-navigation").hide();
-  });
-
-  $(".detail-popup .close-button").click(function(){
+    $(".button-navigation").hide();
+    $.fn.fullpage.setMouseWheelScrolling(false);
+    $.fn.fullpage.setAllowScrolling(false);
   });
 
   $(".popular-destination .destination").click(function() {
     $(".detail-popup").addClass("active");
+    $.fn.fullpage.setMouseWheelScrolling(false);
+    $.fn.fullpage.setAllowScrolling(false);
   });
 
   $(".detail-popup .body .close-button").click(function(){
     $(".detail-popup").removeClass("active");
-     $(".button-navigation").show();
+    $(".button-navigation").show();
+    $.fn.fullpage.setMouseWheelScrolling(true);
+    $.fn.fullpage.setAllowScrolling(true);
   });
-
-
-  // hover popular destination
-  $(".popular-destination .destination").mouseenter(function() {
-    $(this).addClass("active");
-  });
-
-  $(".popular-destination .destination").mouseleave(function() {
-    $(this).removeClass("active");
-  });
-
 
   //gallery slider
 
@@ -94,4 +76,12 @@ $(document).ready(function(){
       $(this).addClass("data-slide-"+ newValueAtt +"");
     });ytplayer-container
   });
+
+  //gallery popup
+  $(".slider-gallery .row-gallery a").click(function(e){
+    var url = $(this).attr("href");
+
+    e.preventDefault();
+  });
+
 });
