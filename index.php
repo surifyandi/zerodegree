@@ -27,11 +27,11 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- responsive -->
-    <link rel="stylesheet" href="css/responsive.css" />
-
     <!-- component -->
     <link rel="stylesheet" href="css/component.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css" />
 
   </head>
   <body>
@@ -107,9 +107,42 @@
             </div>
           </article>
         </div>
-        <div class="meta-navigation">
-          <i class="fa fa-long-arrow-down"></i>
-        </div>
+
+        <!-- popup -->
+        <section class="detail-popup">
+          <article class="body">
+            <figure class="cover-photo">
+              <img src="images/small-thumb/articles/img-article-1.jpg" alt="" />
+            </figure>
+            <div class="content">
+              <div class="narration">
+                <h2 class="main-title">Lorem ipsum dolor sit amet, salutatus abhorreant an pro, te eum tritani fierent</h2>
+
+                <p>Lorem ipsum dolor sit amet, salutatus abhorreant an pro, te eum tritani fierent. Ne pertinax sadipscing voluptatibus vel, cu quo audire reprehendunt, simul consequat reprimique ei sed. Ei per fastidii sadipscing definitiones. An minim mazim feugait ius. Graeco molestiae scripserit sit te, ea scripserit dissentiet ius, id vero consequuntur duo. Eruditi omittam eu mei. Pro eligendi praesent sapientem no. Cu paulo expetenda appellantur vix, sea et nulla mollis ullamcorper, fabulas adipisci cum te. Nonumes nostrum sadipscing mel et, quo essent reprimique eu, ex persius maiestatis democritum ius. Augue albucius nam id, id natum soluta patrioque vel. Mea nostrud noluisse ea. Pro ea consul omnium assueverit, cu nec eius mutat malis, no volumus suscipiantur qui.</p>
+
+                <img src="images/small-thumb/articles/img-article-2.jpg" />
+
+                <p>Mei fierent eleifend eloquentiam et, ea nec modo maiestatis, per no dicta elaboraret. Ius petentium sententiae an. Vim inani graeci posidonium ut, in per offendit legendos, eam vero choro recusabo ut. Cu mel dicit ludus option, vim dissentiet definitiones ut. Id eam purto cibo fabellas, eripuit detracto patrioque no nec. Ut falli iudico scripta cum, erant democritum delicatissimi nec ne. Harum legendos mandamus ut sit, ius no nostrud reprimique deterruisset. Nisl partem democritum ius ea. Ut molestiae maiestatis sea. Eruditi antiopam comprehensam at eum, an mea partem quidam impedit. Ullum ubique te vim, vidisse denique incorrupte ad cum.</p>
+
+                <p>At pro facete quodsi legimus, iuvaret dolores cum et, per et iuvaret adipisci nominati. Est ei elit civibus. Eam ad quod fabulas, noluisse contentiones cum et, eu alia nonumes has. Eos eirmod torquatos similique te, usu vidisse ponderum ex, feugiat civibus et mei. Euismod suavitate te per, paulo imperdiet delicatissimi et ius.</p>
+              </div>
+
+              <div class="meta-button">
+                <ul>
+                  <li class="love-button"><a href="#"></a></li>
+                  <li class="dest-button"><a href="#"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+                  <li class="gallery-button"><a href="#"><i class="glyphicon glyphicon-picture"></i></a></li>
+                  <li class="travel-button"><a href="#"><i class="fa fa-plane"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="close-button">
+              <li></li>
+              <li></li>
+            </ul>
+          </article>
+        </section>
+        <!-- end of popup -->
       </section>
       <!-- end of latest article -->
 
@@ -157,9 +190,45 @@
             </div>
           </article>
         </div>
-        <div class="meta-navigation">
-          <i class="fa fa-long-arrow-down"></i>
-        </div>
+        <!-- popup -->
+        <section class="detail-popup">
+          <article class="body">
+            <div class="map-popup">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                frameborder="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498545.8008968481!2d112.67352490326526!3d-7.942868730105863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sMt+Bromo!5e0!3m2!1sen!2sid!4v1477637403501"></iframe>
+            </div>
+            <div class="content">
+              <div class="narration">
+                <h2 class="main-title">Lorem ipsum dolor sit amet, salutatus abhorreant an pro, te eum tritani fierent</h2>
+
+                <p>Lorem ipsum dolor sit amet, salutatus abhorreant an pro, te eum tritani fierent. Ne pertinax sadipscing voluptatibus vel, cu quo audire reprehendunt, simul consequat reprimique ei sed. Ei per fastidii sadipscing definitiones. An minim mazim feugait ius. Graeco molestiae scripserit sit te, ea scripserit dissentiet ius, id vero consequuntur duo. Eruditi omittam eu mei. Pro eligendi praesent sapientem no. Cu paulo expetenda appellantur vix, sea et nulla mollis ullamcorper, fabulas adipisci cum te. Nonumes nostrum sadipscing mel et, quo essent reprimique eu, ex persius maiestatis democritum ius. Augue albucius nam id, id natum soluta patrioque vel. Mea nostrud noluisse ea. Pro ea consul omnium assueverit, cu nec eius mutat malis, no volumus suscipiantur qui.</p>
+
+                <img src="images/small-thumb/articles/img-article-3.jpg" />
+
+                <p>Mei fierent eleifend eloquentiam et, ea nec modo maiestatis, per no dicta elaboraret. Ius petentium sententiae an. Vim inani graeci posidonium ut, in per offendit legendos, eam vero choro recusabo ut. Cu mel dicit ludus option, vim dissentiet definitiones ut. Id eam purto cibo fabellas, eripuit detracto patrioque no nec. Ut falli iudico scripta cum, erant democritum delicatissimi nec ne. Harum legendos mandamus ut sit, ius no nostrud reprimique deterruisset. Nisl partem democritum ius ea. Ut molestiae maiestatis sea. Eruditi antiopam comprehensam at eum, an mea partem quidam impedit. Ullum ubique te vim, vidisse denique incorrupte ad cum.</p>
+
+                <p>At pro facete quodsi legimus, iuvaret dolores cum et, per et iuvaret adipisci nominati. Est ei elit civibus. Eam ad quod fabulas, noluisse contentiones cum et, eu alia nonumes has. Eos eirmod torquatos similique te, usu vidisse ponderum ex, feugiat civibus et mei. Euismod suavitate te per, paulo imperdiet delicatissimi et ius.</p>
+              </div>
+
+              <div class="meta-button">
+                <ul>
+                  <li class="love-button"><a href="#"></a></li>
+                  <li class="dest-button"><a href="#"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+                  <li class="gallery-button"><a href="#"><i class="glyphicon glyphicon-picture"></i></a></li>
+                  <li class="travel-button"><a href="#"><i class="fa fa-plane"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="close-button">
+              <li></li>
+              <li></li>
+            </ul>
+          </article>
+        </section>
+        <!-- end of popup -->
       </section>
       <!-- end of popular destination -->
 
@@ -168,42 +237,32 @@
         <div class="dot-pattern"></div>
         <div class="slider-gallery">
           <div class="row-gallery">
-            <a href="images/small-thumb/gallery-slider/thumb-1.jpg" data-slide="1" class="data-slide-1">
-              <figure class="image">
-                <img src="images/small-thumb/gallery-slider/thumb-1.jpg" alt="" />
-              </figure>
+            <a href="images/small-thumb/gallery-slider/thumb-1.jpg" title="Lorem ipsum dolor sit amet, ne duis detraxit" data-slide="1" class="data-slide-1">
+              <div class="background image" style="background-image: url(images/small-thumb/gallery-slider/thumb-1.jpg)"></div>
               <div class="caption active">
                 <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
               </div>
             </a>
-            <a href="#" data-slide="2" class="data-slide-2">
-              <figure class="video">
-                <img src="images/small-thumb/gallery-slider/thumb-2.jpg" alt="" />
-              </figure>
+            <a href="images/small-thumb/gallery-slider/thumb-2.jpg" data-slide="2" title="Lorem ipsum dolor sit amet, ne duis detraxit" class="data-slide-2">
+              <div class="background image" style="background-image: url(images/small-thumb/gallery-slider/thumb-2.jpg)"></div>
               <div class="caption">
                 <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
               </div>
             </a>
-            <a href="#" data-slide="3" class="data-slide-3">
-              <figure class="image">
-                <img src="images/small-thumb/gallery-slider/thumb-3.jpg" alt="" />
-              </figure>
+            <a href="images/small-thumb/gallery-slider/thumb-3.jpg" data-slide="3" title="Lorem ipsum dolor sit amet, ne duis detraxit" class="data-slide-3">
+              <div class="background image" style="background-image: url(images/small-thumb/gallery-slider/thumb-3.jpg)"></div>
               <div class="caption">
                 <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
               </div>
             </a>
-            <a href="#" data-slide="4" class="data-slide-4">
-              <figure class="image">
-                <img src="images/small-thumb/gallery-slider/thumb-4.jpg" alt="" />
-              </figure>
+            <a href="images/small-thumb/gallery-slider/thumb-4.jpg" data-slide="4" title="Lorem ipsum dolor sit amet, ne duis detraxit" class="data-slide-4">
+              <div class="background image" style="background-image: url(images/small-thumb/gallery-slider/thumb-4.jpg)"></div>
               <div class="caption">
                 <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
               </div>
             </a>
-            <a href="#" data-slide="5" class="data-slide-5">
-              <figure class="image">
-                <img src="images/small-thumb/gallery-slider/thumb-5.jpg" alt="" />
-              </figure>
+            <a href="images/small-thumb/gallery-slider/thumb-5.jpg" data-slide="5" title="Lorem ipsum dolor sit amet, ne duis detraxit" class="data-slide-5">
+              <div class="background image" style="background-image: url(images/small-thumb/gallery-slider/thumb-5.jpg)"></div>
               <div class="caption">
                 <h3>Lorem ipsum dolor sit amet, ne duis detraxit</h3>
               </div>
@@ -232,60 +291,6 @@
 
     </div>
 
-    <!-- popup -->
-    <section class="detail-popup">
-      <article class="body">
-        <div class="property">
-          <figure>
-            <img src="images/small-thumb/articles/img-article-1.jpg" alt="" />
-          </figure>
-        </div>
-        <div class="text">
-          <h3>Lorem Ipsum Dolor Sit Amet Consec tetur Adipisicing Elit</h3>
-          <p>
-            Lorem ipsum dolor sit amet, eripuit disputando mei no, dico elit ex eos. Ad dicant indoctum usu, id ius soluta causae voluptatum. Tacimates invenire complectitur ad pri, tritani quaerendum cum ei. Tota delectus theophrastus pro ad. Ea elit exerci qui, consul rationibus repudiandae sea ex. Cu dicam laoreet sea, quo ne detracto imperdiet.
-          </p>
-
-          <p>
-            Mea quas graecis ne. Te natum offendit singulis qui, usu molestiae liberavisse in. Cu natum philosophia disputationi mel. Est ex error dissentias. Nisl invidunt pericula ut eos, duo an wisi legere, at quot iusto voluptaria his. No detracto adipisci principes sea, eam cu prima copiosae convenire.
-          </p>
-
-          <figure>
-            <img src="images/small-thumb/articles/img-article-2.jpg" alt="" />
-          </figure>
-
-          <p>
-            Tollit principes voluptatum vel ne, sit eligendi vivendum facilisi ad, an pro graece option insolens. Id eam ipsum libris iudicabit, qui sale nemore at, ne duo mollis discere interesset. Has congue tacimates perpetua cu. Impetus volumus inimicus id est, ius ne mundi definiebas.
-          </p>
-
-          <p>
-            Eu aliquip detraxit consulatu mel, dicat tritani cu ius. Facilisi complectitur ea usu, ut verterem hendrerit duo, aperiam laoreet adipisci ius id. Ex sit dicat inani tritani. Tale suscipit eu quo. Ei sea quando minimum, usu magna deserunt aliquando ei. Sumo velit fabulas his cu. Sea option debitis invenire in, commune salutatus efficiantur eos ut, regione sententiae eu pro. Corpora liberavisse at sea, saepe omittam delectus per ad. Libris delicatissimi in vix. In mel suavitate imperdiet, ne has erant dolore audire.
-          </p>
-
-          <figure>
-            <img src="images/small-thumb/articles/img-article-3.jpg" alt="" />
-          </figure>
-
-          <p>
-            Lorem ipsum dolor sit amet, eripuit disputando mei no, dico elit ex eos. Ad dicant indoctum usu, id ius soluta causae voluptatum. Tacimates invenire complectitur ad pri, tritani quaerendum cum ei. Tota delectus theophrastus pro ad. Ea elit exerci qui, consul rationibus repudiandae sea ex. Cu dicam laoreet sea, quo ne detracto imperdiet.
-          </p>
-        </div>
-        <div class="meta-button">
-          <ul>
-            <li class="love-button"><i class="glyphicon glyphicon-heart"></i></li>
-            <li class="dest-button"><i class="glyphicon glyphicon-map-marker"></i></li>
-            <li class="gallery-button"><i class="glyphicon glyphicon-picture"></i></li>
-            <li class="travel-button"><i class="fa fa-plane"></i></li>
-          </ul>
-        </div>
-        <ul class="close-button">
-          <li></li>
-          <li></li>
-        </ul>
-      </article>
-    </section>
-    <!-- end of popup -->
-
   </body>
 
   <!-- jquery -->
@@ -306,11 +311,14 @@
   <!-- main js -->
   <script src="js/script.js"></script>
 
+  <!-- gallery slider -->
+  <script src="js/gallery-slider.js"></script>
+
   <script>
     $(document).ready(function() {
       $('.fullpage').fullpage();
 
-      $('.detail-popup .text').mCustomScrollbar({
+      $('.detail-popup .content .narration').mCustomScrollbar({
         theme: 'dark'
       });
 

@@ -669,41 +669,6 @@ section.latest-gallery .slider-gallery{
   text-decoration: none;
 }
 
-.slider-gallery .row-gallery a.data-slide-4{
-  width: 38%;
-  height: 47.5%;
-  top: 40%;
-  left: 34.5%;
-  right: auto;
-  -webkit-transform: translate(-34.5%, -40%);
-  -moz-transform: translate(-34.5%, -40%);
-  -ms-transform: translate(-34.5%, -40%);
-  -o-transform: translate(-34.5%, -40%);
-  transform: translate(-34.5%, -40%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  z-index: 1;
-}
-
-.slider-gallery .row-gallery a.data-slide-5{
-  width: 45%;
-  height: 53.75%;
-  top: 40%;
-  left: 42%;
-  -webkit-transform: translate(-42%, -40%);
-  -moz-transform: translate(-42%, -40%);
-  -ms-transform: translate(-42%, -40%);
-  -o-transform: translate(-42%, -40%);
-  transform: translate(-42%, -40%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  z-index: 2;
-}
-
 .slider-gallery .row-gallery a.data-slide-1{
   width: 50%;
   height: 62%;
@@ -755,6 +720,41 @@ section.latest-gallery .slider-gallery{
   z-index: 1;
 }
 
+.slider-gallery .row-gallery a.data-slide-4{
+  width: 38%;
+  height: 47.5%;
+  top: 40%;
+  left: 34.5%;
+  right: auto;
+  -webkit-transform: translate(-34.5%, -40%);
+  -moz-transform: translate(-34.5%, -40%);
+  -ms-transform: translate(-34.5%, -40%);
+  -o-transform: translate(-34.5%, -40%);
+  transform: translate(-34.5%, -40%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  z-index: 1;
+}
+
+.slider-gallery .row-gallery a.data-slide-5{
+  width: 45%;
+  height: 53.75%;
+  top: 40%;
+  left: 42%;
+  -webkit-transform: translate(-42%, -40%);
+  -moz-transform: translate(-42%, -40%);
+  -ms-transform: translate(-42%, -40%);
+  -o-transform: translate(-42%, -40%);
+  transform: translate(-42%, -40%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  z-index: 2;
+}
+
 .slider-gallery .row-gallery a .caption h3{
   text-align: center;
   color: #fff;
@@ -778,32 +778,34 @@ section.latest-gallery .slider-gallery{
   padding-top: 0;
 }
 
-.slider-gallery .row-gallery a figure{
+.slider-gallery .row-gallery a .background{
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  background: #000;
+  background-size: cover;
   -webkit-transition: .35s ease-in-out;
   -moz-transition: .35s ease-in-out;
   -o-transition: .35s ease-in-out;
   transition: .35s ease-in-out;
 }
 
-.slider-gallery .row-gallery a figure figcaption h3{
-  font-family: montserrat;
-  color: #fff;
-  margin-bottom: 0;
+.slider-gallery .row-gallery a .background:before{
+  content: " ";
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.slider-gallery .row-gallery a figure img{
-  width: 110%;
-  -webkit-transition: .35s ease-in-out;
-  -moz-transition: .35s ease-in-out;
-  -o-transition: .35s ease-in-out;
-  transition: .35s ease-in-out;
+.slider-gallery .row-gallery a:hover .background:before{
+  visibility: visible;
+  opacity: 1;
 }
 
-.slider-gallery .row-gallery a figure:before{
+.slider-gallery .row-gallery a .background:after{
   display: block;
   color: #000;
   background: #ffce00;
@@ -830,15 +832,15 @@ section.latest-gallery .slider-gallery{
   transition: .3s ease-in-out;
 }
 
-.slider-gallery .row-gallery a figure.image:before{
+.slider-gallery .row-gallery a .background.image:after{
   content: "\f002";
 }
 
-.slider-gallery .row-gallery a figure.video:before{
+.slider-gallery .row-gallery a .background.video:after{
   content: "\f04b";
 }
 
-.slider-gallery .row-gallery a:hover figure:before{
+.slider-gallery .row-gallery a:hover .background:after{
   visibility: visible;
   opacity: 1;
   top: 50%;
@@ -847,11 +849,6 @@ section.latest-gallery .slider-gallery{
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-
-.slider-gallery .row-gallery a:hover figure img{
-  opacity: .3;
-}
-
 .slider-gallery .control{
   display: block;
   position: absolute;
@@ -892,9 +889,20 @@ section.latest-gallery .slider-gallery{
 .slider-gallery .popup-gallery{
   width: 100%;
   height: 100%;
+  visibility: hidden;
+  opacity: 0;
   background: rgba(0, 0, 0, .95);
   position: absolute;
   z-index: 9999;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  -o-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+}
+
+.slider-gallery .popup-gallery.active{
+  visibility: visible;
+  opacity: 1;
 }
 
 .slider-gallery .popup-gallery figure{
@@ -932,120 +940,6 @@ section.latest-gallery .slider-gallery{
 /*end of slider gallery*/
 
 /*detail-popup*/
-
-.detail-popup{
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, .85);
-  position: fixed;
-  top: 0;
-  z-index: 99999;
-  visibility: hidden;
-  opacity: 0;
-  transition: .5s ease-in-out;
-}
-
-.detail-popup.active{
-  visibility: visible;
-  opacity: 1;
-}
-
-.detail-popup .body{
-  width: 93%;
-  height: 93%;
-  background: #fff;
-  display: block;
-  margin-left: 1.5%;
-  margin-top: 1.5%;
-  position: relative;
-}
-
-.detail-popup .body .property{
-  width: 50%;
-  height: 100%;
-  display: inline-block;
-}
-
-.detail-popup .body .property figure{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.detail-popup .body .property figure img{
-  height: 100%;
-}
-
-.detail-popup .body .text{
-  width: 50%;
-  height: 100%;
-  display: inline-block;
-  position: relative;
-  float: right;
-  padding: 0;
-  overflow: auto;
-  padding: 30px 15px 60px 30px;
-}
-
-.detail-popup .body .text p{
-  font-family: droid serif;
-  font-size: 15px;
-  line-height: 24px;
-  color: #333;
-}
-
-.detail-popup .body .text h3{
-  line-height: 30px;
-  font-family: montserrat;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.detail-popup .body .text figure img{
-  width: 100%;
-}
-
-.detail-popup .body .text figure{
-  margin-bottom: 15px;
-}
-
-.detail-popup .body .meta-button{
-  width: 50%;
-  position: fixed;
-  bottom: 28px;
-  right: 0;
-  z-index: 99999;
-}
-
-.detail-popup .body .meta-button ul{
-  list-style: none;
-  padding-left: 0;
-}
-
-.detail-popup .body .meta-button ul li{
-  display: inline-block;
-  font-size: 20px;
-  margin-right: 20px;
-  text-align: center;
-  color: #999;
-  transition: .5s ease-in-out;
-}
-
-.detail-popup .body .meta-button ul li.gallery-button{
-  padding-top: 5px;
-}
-
-.detail-popup .body .meta-button ul li.love-count{
-  position: absolute;
-  right: 0;
-  font-size: 14px;
-}
-
-.detail-popup .body .meta-button ul li:hover{
-  color: #333;
-  cursor: pointer;
-}
 
 .detail-popup .body .close-button{
   position: absolute;

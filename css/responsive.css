@@ -25,7 +25,13 @@
 		line-height: 20px;
 	}
 
-@media (max-width: 767px){
+@media(min-width: 768px) and (max-width: 991px){
+	.detail-popup .body .content{
+		padding: 20px;
+	}
+}
+
+@media (max-width: 767px) and (orientation: portrait){
 
 	/*latest article*/
 
@@ -36,13 +42,17 @@
 
 	section.latest-articles article.big-article{
 		width: 100%;
-		height: 50%;
+		height: 40%;
 	}
 	section.latest-articles article.small-article{
 		width: 50%;
-		height: 25%;
+		height: 30%;
 		margin-right: -4px;
-		margin-bottom: -5px;
+	}
+
+	section.latest-articles article.small-article:nth-child(4), 
+	section.latest-articles article.small-article:nth-child(5){
+		margin-top: -5px;
 	}
 
 	section.latest-articles article.big-article:before,
@@ -52,41 +62,109 @@
 		display: none;
 	}
 
+	section.latest-articles article.big-article .title h4{
+		margin-bottom: 0;
+	}
+
+	section.latest-articles article.small-article .title h4{
+		margin-bottom: 5px;
+	}
+
 	/*end of latest article*/
 
 	/*detail popup*/
 
 	.detail-popup .body{
-		display: block;
-		width: 95%;
-		margin: auto;
-		margin-top: 10%;
+		width: 97%;
+		height: 98.5%;
 	}
 
-	.detail-popup .body .property{
+	.detail-popup .body figure.cover-photo,
+	.detail-popup .body .map-popup{
 		display: block;
 		width: 100%;
-		height: 30%;
-		overflow: hidden;
+		height: 35%;
 	}
 
-	.detail-popup .body .property figure img{
+	.detail-popup .body figure.cover-photo img{
 		width: 100%;
 		height: auto;
 	}
 
-	.detail-popup .body .text{
+	.detail-popup .body .content{
 		width: 100%;
-		height: 70%;
+		height: 65%;
 		display: block;
+		padding: 15px;
 	}
 
-	.detail-popup .meta-button{
-		position: absolute;
-		left: 30px;
-		bottom: 5px;
-		display: block;
+	.detail-popup .body .content .narration{
+		margin-bottom: 15px;
 	}
 
+	.detail-popup .body .close-button{
+		background: rgba(0, 0, 0, .5);
+		height: 33px;
+	  	position: absolute;
+	  	top: 0;
+	  	right: 0;
+	}
 	/*end of detail popup*/
+
+	/*slider gallery*/
+	.slider-gallery .row-gallery a.data-slide-1{
+	  	width: 85%;
+	  	height: 62%;
+	  	top: 40%;
+	  	left: 50%;
+	}
+	/*end of slider gallery*/
+}
+
+@media (max-width: 767px) and (orientation: landscape){
+
+	/*main navigation*/
+	.navigation ul li a{
+		font-size: 20px;
+		line-height: 36px;
+	}
+
+	.navigation ul li.socmed a:first-child{
+		font-size: 20px;
+	}
+	/*end of main navigation*/
+
+	/*latest article*/
+	section.latest-articles .container{
+		width: 100%;
+		height: 100%;
+	}
+
+	section.latest-articles article.big-article{
+		margin-right: -4px;
+	}
+
+	section.latest-articles article.small-article{
+		margin-right: -4px;
+		width: 25.566665%;
+		height: 50%;
+	}
+
+	section.latest-articles article.big-article .meta{
+		right: 15px;
+	}
+
+	section.latest-articles article.big-article .title h4{
+		margin-bottom: 0;
+	}
+
+	section.latest-articles article.small-article .title h4{
+		margin-bottom: 0;
+	}
+
+	section.latest-articles article.small-article:nth-child(4), 
+	section.latest-articles article.small-article:nth-child(5){
+		margin-top: -5px;
+	}
+	/*end of latest article*/
 }

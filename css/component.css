@@ -1,4 +1,5 @@
 /*close button*/
+
 .close-button{
   list-style: none;
   width: 30px;
@@ -35,3 +36,160 @@
 }
 
 /*end of close button*/
+
+/*popup detail*/
+
+.detail-popup{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .85);
+  position: absolute;
+  top: 0;
+  z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.detail-popup.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.detail-popup .body{
+  width: 93%;
+  height: 93%;
+  background: #fff;
+  display: block;
+  margin-left: 1.5%;
+  margin-top: 1.5%;
+  position: relative;
+}
+
+.detail-popup .body figure.cover-photo,
+.detail-popup .body .map-popup{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  margin-right: -4px;
+  overflow: hidden;
+  background: #e9e9e9;
+}
+
+.detail-popup .body figure.cover-photo img{
+  height: 100%;
+}
+
+.detail-popup .body .content{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  padding: 30px;
+}
+
+.detail-popup .body .content .narration{
+  height: 91%;
+  margin-bottom: 25px;
+}
+
+.detail-popup .body .content .narration .mCSB_scrollTools{
+  right: -5px;
+}
+
+.detail-popup .body .content .narration .main-title{
+  margin-top: 0;
+  font-family: montserrat;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 36px;
+}
+
+.detail-popup .body .content .narration p{
+  font-family: Droid Serif;
+  line-height: 24px;
+}
+
+.detail-popup .body .content .narration img{
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+.detail-popup .body .content .meta-button ul{
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.detail-popup .body .content .meta-button ul li{
+  display: inline-block;
+}
+
+.detail-popup .body .content .meta-button ul li a{
+  color: #999;
+}
+
+.detail-popup .body .content .meta-button ul li.love-button a{
+  margin-right: 10px;
+}
+
+.detail-popup .body .content .meta-button ul li.love-button a:before{
+  content: "\f08a";
+  font-family: FontAwesome;
+  font-size: 24px;
+  color: #999;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  -o-transition: .35s ease-in-out;
+  transition: 35s ease-in-out;
+}
+
+.detail-popup .body .content .meta-button ul li.love-button a:after{
+  content: "\f004";
+  font-family: FontAwesome;
+  font-size: 24px;
+  display: none;
+}
+
+.detail-popup .body .content .meta-button ul li.dest-button a{
+  font-size: 21px;
+  margin-right: 13px;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  -o-transition: .35s ease-in-out;
+  transition: 35s ease-in-out;
+}
+
+.detail-popup .body .content .meta-button ul li.gallery-button a{
+  font-size: 22px;
+  margin-right: 15px;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  -o-transition: .35s ease-in-out;
+  transition: 35s ease-in-out;
+}
+
+.detail-popup .body .content .meta-button ul li.travel-button a{
+  font-size: 22px;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  -o-transition: .35s ease-in-out;
+  transition: 35s ease-in-out;
+}
+
+.detail-popup .body .content .meta-button ul li a:hover,
+.detail-popup .body .content .meta-button ul li a:focus{
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.detail-popup .body .content .meta-button ul li.love-button a:hover ::before{
+  color: #ff0000;
+}
+
+/*end of popup detail*/
